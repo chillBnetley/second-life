@@ -1,0 +1,14 @@
+{
+  "name": "Second Life · 第二人生模拟器",
+  "short_name": "Second Life",
+  "description": "AI 驱动的现实人生模拟游戏：从 18 岁开始经营学习、工作、社交与财富。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07080f",
+  "theme_color": "#0b0d18",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { min-height: 100%; }
+body {
+  margin: 0;
+  background-color: #07080f;
+  background-image:
+    radial-gradient(900px 500px at 12% -10%, rgba(124, 108, 240, 0.18), transparent 60%),
+    radial-gradient(700px 420px at 100% 10%, rgba(233, 166, 58, 0.10), transparent 60%),
+    radial-gradient(800px 500px at 50% 120%, rgba(61, 214, 163, 0.07), transparent 60%);
+  background-attachment: fixed;
+  color: #d6d9ee;
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: rgba(246, 194, 91, 0.35); }
+.scroll-thin::-webkit-scrollbar { height: 6px; width: 6px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.14); border-radius: 9px; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, a:focus-visible {
+  outline: 2px solid #f6c25b; outline-offset: 2px;
+}
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom, 0px); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* 设置页「减少动画」开关：与系统 prefers-reduced-motion 同效 */
+.reduce-motion *, .reduce-motion *::before, .reduce-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}

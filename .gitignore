@@ -1,0 +1,18 @@
+node_modules
+dist
+.env
+.ai-config.json
+*.local
+.npm-cache
+coverage
+*.log
+
+.vercel
+
+# 构建/工具临时文件
+.vercel
+*.tsbuildinfo
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json

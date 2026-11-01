@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# hash 路由，无需 SPA 重写；静态资源长缓存由 Netlify 默认处理
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# 注意：Netlify 的 Serverless 函数目录是 netlify/functions/。
+# 若要在这里也提供 AI，请把 api/ai/chat.js 适配为 netlify/functions/chat.js，
+# 并在前端把 /api/ai/chat 指向 /.netlify/functions/chat（或配置 redirect）。
+# 不配 AI 时游戏完全可玩，只是 AI 开关会降级为本地剧情。
+
+[[redirects]]
+  from = "/api/ai/*"
+  to = "/.netlify/functions/chat"
+  status = 200
+  force = false
