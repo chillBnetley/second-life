@@ -1,6 +1,6 @@
 ﻿# Second Life · AI 第二人生模拟器
 
-[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
+[![CI](https://github.com/chillBnetley/second-life/actions/workflows/ci.yml/badge.svg)](https://github.com/chillBnetley/second-life/actions/workflows/ci.yml)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 > 以现实人生为背景的 AI 模拟游戏：从 18 岁开始经营学习、工作、社交、财富与关系。
